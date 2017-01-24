@@ -15,7 +15,7 @@
       <div class="jumbotron">
         <h1>Bank Account</h1>
       </div>
-      <h2>Register a new</h2>
+      <h2>Register a new account</h2>
       <form id="bank-info">
         <div class="form-group">
           <label for="name">Full Name:</label>
@@ -27,6 +27,20 @@
         </div>
         <button type="submit" class="btn btn-info">Submit</button>
       </form>
+
+      <h2>Deposit or withdraw funds:</h2>
+      <form id="withdrawl-deposit">
+        <div class="form-group">
+          <label for="deposit">Deposit Amount:</label>
+          <input id="deposit" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="withdrawl">Withdrawl Amount:</label>
+          <input id="withdrawl" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn btn-info">Submit</button>
+      </form>
+
       <div class="results">
         <h2>Current Balance:</h2>
         <p><span class="show-balance"></span></p>

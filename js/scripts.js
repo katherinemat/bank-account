@@ -15,6 +15,16 @@ $(document).ready(function() {
     var defaultDeposit = parseInt($("#initial-deposit").val());
     var customerInfo = new BankAccount(inputName, defaultDeposit);
     $(".show-balance").append(customerInfo.display());
-
+    console.log(customerInfo.initial);
   });
+
+  $("#withdrawl-deposit").submit(function(event) {
+    event.preventDefault();
+
+    var depositAmount = parseInt($("#deposit").val());
+    var withdrawlAmount = parseInt($("#withdrawl").val());
+    console.log(depositAmount);
+    console.log(withdrawlAmount);
+  });
+
 });
