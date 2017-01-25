@@ -25,6 +25,7 @@ $(document).ready(function() {
     array.push(customerInfo);
 
     $(".show-balance").empty().append(customerInfo.display());
+    $("#withdrawl-deposit").show();
   });
 
   $("#withdrawl-deposit").submit(function(event) {
